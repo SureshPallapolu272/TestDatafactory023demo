@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "testdatafactory023"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureFunction1_functionKey": {
+			"value": ""
+		},
+		"LS_SQLDBConnection_connectionString": {
+			"value": ""
+		},
+		"Teradata1_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://testazuredatalake023.dfs.core.windows.net/"
+		},
+		"AzureFunction1_properties_typeProperties_functionAppUrl": {
+			"value": "https://testfunctionapp023.azurewebsites.net"
+		},
+		"LS_BlobConnection_properties_typeProperties_serviceEndpoint": {
+			"value": "https://testazureblobstorage23.blob.core.windows.net/"
+		},
+		"LS_HTTPConnection_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"LS_KeyvaultConnection_properties_typeProperties_baseUrl": {
+			"value": "https://testkeyvaultdemo023.vault.azure.net/"
+		},
+		"TR_EventTrigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG002/providers/Microsoft.Storage/storageAccounts/testazureblobstorage23"
+		},
+		"AzureSQLPE_properties_privateLinkResourceId": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG002/providers/Microsoft.Sql/servers/testsqlserver023"
+		},
+		"AzureSQLPE_properties_groupId": {
+			"value": "sqlServer"
+		},
+		"AzureSQLPE_properties_fqdns": {
+			"value": [
+				"testsqlserver023.database.windows.net"
+			]
+		},
+		"BLOBPE_properties_privateLinkResourceId": {
+			"value": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG002/providers/Microsoft.Storage/storageAccounts/testazureblobstorage23"
+		},
+		"BLOBPE_properties_groupId": {
+			"value": "blob"
+		},
+		"BLOBPE_properties_fqdns": {
+			"value": [
+				"testazureblobstorage23.blob.core.windows.net"
+			]
+		}
+	}
+}
