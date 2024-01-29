@@ -1,0 +1,10 @@
+{
+	"name": "BLOBPE",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/0b09d9a2-10b0-4bdb-966c-fa3ebfa3ba0a/resourceGroups/TestRG002/providers/Microsoft.Storage/storageAccounts/testazureblobstorage23",
+		"groupId": "blob",
+		"fqdns": [
+			"testazureblobstorage23.blob.core.windows.net"
+		]
+	}
+}

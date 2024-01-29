@@ -1,0 +1,13 @@
+{
+	"name": "AzureFunction1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureFunction",
+		"typeProperties": {
+			"functionAppUrl": "https://testfunctionapp023.azurewebsites.net",
+			"authentication": "MSI",
+			"resourceId": "959feb0f-fc0f-418d-ac21-75ec5874913d"
+		}
+	}
+}
